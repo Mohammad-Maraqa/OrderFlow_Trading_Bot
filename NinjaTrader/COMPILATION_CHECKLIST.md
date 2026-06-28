@@ -1,0 +1,143 @@
+# NT-4G Compilation and Runtime Checklist
+
+- [ ] NinjaTrader 8 opens successfully.
+- [ ] Files copied to the correct folders beneath `bin/Custom`.
+- [ ] NinjaScript Editor opens.
+- [ ] Compile clicked.
+- [ ] There are no compile errors.
+- [ ] The strategy appears in the Strategies list.
+- [ ] The strategy can be added to a chart.
+- [ ] The strategy can be enabled.
+- [ ] `EvaluationOnlyMode is true`.
+- [ ] `UseSimOnly is true`.
+- [ ] `AllowLiveTrading is false`.
+- [ ] `EnableSignalObservationJournal is true`.
+- [ ] `JournalOnlyConfirmedCandidates is false`.
+- [ ] `JournalOnlyWhenCandidateExists is true`.
+- [ ] `JournalFileName is orderflow_signal_observations.jsonl`.
+- [ ] `JournalCooldownBars is 5`.
+- [ ] `EnableHypotheticalOutcomeTracking is true`.
+- [ ] `TrackWeakConfirmations is false`.
+- [ ] `MaxBarsToTrackOutcome is 50`.
+- [ ] `ConservativeSameBarResolution is true`.
+- [ ] `PrintOutcomeEvents is true`.
+- [ ] `PrintOpenOutcomeCountEveryHeartbeat is true`.
+- [ ] `EnablePerformanceSummary is true`.
+- [ ] `PrintPerformanceSummary is true`.
+- [ ] `PerformanceSummaryEveryClosedOutcomes is 25`.
+- [ ] `PrintSetupBreakdown is true`.
+- [ ] `TimeoutResultR is 0.0`.
+- [ ] `InvalidatedResultR is 0.0`.
+- [ ] `DefaultTargetRewardR is 2.0`.
+- [ ] `EnableReplayValidation is true`.
+- [ ] `PrintReplayValidationSummary is true`.
+- [ ] `PrintReplayValidationEveryBars is 500`.
+- [ ] `MinimumClosedOutcomesForReview is 50`.
+- [ ] `MinimumBarsForReview is 500`.
+- [ ] `ReplaySessionLabel` is set intentionally or left blank.
+- [ ] `EnableStrategyDiagnostics is true`.
+- [ ] `PrintStrategyDiagnostics is true`.
+- [ ] `DiagnosticsEveryClosedOutcomes is 100`.
+- [ ] `MinimumClosedOutcomesForDiagnostics is 100`.
+- [ ] `MinimumSetupOutcomesForDecision is 20`.
+- [ ] `MinimumAverageRForSim101 is 0.05`.
+- [ ] `MinimumSetupAverageRToKeep is 0.0`.
+- [ ] `EnableStrategyFilterLayer is true`.
+- [ ] `StrategyFilterProfile is DiagnosticV2`.
+- [ ] `PrintFilteredCandidates is true`.
+- [ ] `PrintFilterSummaryEveryBars is 500`.
+- [ ] `V2AllowBreakoutPullbackLong is true`.
+- [ ] `V2AllowFailedBreakdownLong is true`.
+- [ ] `V2AllowValueReclaimLong is false`.
+- [ ] `V2AllowDeviationRejectionLong is false`.
+- [ ] `V2AllowPullbackContinuationLong is false`.
+- [ ] `V2MinimumConfirmationScore is 85`.
+- [ ] `V2MinimumRewardRisk is 2.0`.
+- [ ] `V2RequireConfirmationObserved is true`.
+- [ ] `V2RejectStrongSellerPressure is true`.
+- [ ] `V2RejectNoConfirmation is true`.
+- [ ] `V2RejectWeakConfirmation is true`.
+- [ ] `V2RejectBreakoutAboveUpperDeviation is true`.
+- [ ] `EnableHigherTimeframeBiasFilter is true`.
+- [ ] `EnableAmdPhaseFilter is true`.
+- [ ] `EnableLiquiditySweepFilter is true`.
+- [ ] `EnableFairValueGapFilter is true`.
+- [ ] `EnableDisplacementFilter is true`.
+- [ ] `EnableOteFilter is true`.
+- [ ] `EnableIctTargetQualityFilter is true`.
+- [ ] `HtfFastPeriod is 50`.
+- [ ] `HtfSlowPeriod is 200`.
+- [ ] `RequireSellSideSweepForLongs is true`.
+- [ ] `RequireBullishFvgForLongs is true`.
+- [ ] `RequireBullishDisplacementForLongs is true`.
+- [ ] `RequireOteForLongs is true`.
+- [ ] `MinimumTargetRewardRisk is 2.0`.
+- [ ] `EnableOriginalStrategyAlignment is true`.
+- [ ] `RequireRthSessionOnly is true`.
+- [ ] `RequireClearValueRoadmap is true`.
+- [ ] `RequireValueAcceptance is true`.
+- [ ] `RequireOriginalSetupType is true`.
+- [ ] `RequireLogicalValueTarget is true`.
+- [ ] `MinimumLogicalTargetRoomTicks is 20`.
+- [ ] `MinOriginalConfirmationScore is 85`.
+- [ ] `PrintOriginalStrategyEvents is true`.
+- [ ] No orders appear in any account or Orders tab.
+- [ ] Startup output includes journal config: `EnableSignalObservationJournal`, `JournalOnlyConfirmedCandidates`, `JournalOnlyWhenCandidateExists`, `JournalFileName`, and `JournalCooldownBars`.
+- [ ] Startup output includes outcome tracking config: `EnableHypotheticalOutcomeTracking`, `TrackWeakConfirmations`, `MaxBarsToTrackOutcome`, and `ConservativeSameBarResolution`.
+- [ ] Startup output includes performance summary config: `EnablePerformanceSummary`, `PerformanceSummaryEveryClosedOutcomes`, `PrintSetupBreakdown`, `TimeoutResultR`, `InvalidatedResultR`, and `DefaultTargetRewardR`.
+- [ ] Startup output includes replay validation config: `EnableReplayValidation`, `PrintReplayValidationSummary`, `PrintReplayValidationEveryBars`, `MinimumClosedOutcomesForReview`, `MinimumBarsForReview`, and `ReplaySessionLabel`.
+- [ ] Startup output includes diagnostics config: `EnableStrategyDiagnostics`, `PrintStrategyDiagnostics`, `DiagnosticsEveryClosedOutcomes`, `MinimumClosedOutcomesForDiagnostics`, `MinimumSetupOutcomesForDecision`, and `MinimumAverageRForSim101`.
+- [ ] Startup output includes strategy filter config: `EnableStrategyFilterLayer`, `StrategyFilterProfile`, `PrintFilteredCandidates`, `PrintFilterSummaryEveryBars`, `V2MinimumConfirmationScore`, and setup allow flags.
+- [ ] Startup output includes HTF bias, AMD, liquidity sweep, FVG, displacement, OTE, and target-quality config.
+- [ ] Startup output includes `IctAmdLiquidityV1 available`.
+- [ ] Startup output includes original strategy alignment config and `OriginalValueRoadmapV1 available`.
+- [ ] Startup output includes `Signal journal active`, `Outcome tracking active`, `Performance summary active`, `Replay validation active`, `Strategy diagnostics active`, `Strategy filter layer active`, `Execution enabled: false`, and `Long-only safety active`.
+- [ ] Heartbeat output includes `HTFBias=`, `AMD=`, `Sweep=`, `FVG=`, `Displacement=`, `OTE=`, `TargetQuality=`, `FilterProfile=`, `FilteredCandidates=`, and `AllowedCandidates=`.
+- [ ] Heartbeat output includes `Roadmap=`, `Acceptance=`, `OriginalSetup=`, and `TargetPlan=`.
+- [ ] Journal records are written to JSONL or printed with `SIGNAL_OBSERVATION_JSON=` fallback.
+- [ ] Journal records include candidate, context, value, order-flow, confirmation, execution-disabled, and decision fields.
+- [ ] Hypothetical outcome open events are written as `OUTCOME_OPENED` or printed with `HYPOTHETICAL_OUTCOME_OPENED=`.
+- [ ] Hypothetical outcome closed events are written as `OUTCOME_CLOSED` or printed with `HYPOTHETICAL_OUTCOME_CLOSED=`.
+- [ ] Outcome closes can report `TargetHit`, `StopHit`, or `Timeout`.
+- [ ] Same-bar target/stop behavior is conservative by default and assumes stop first.
+- [ ] `PERFORMANCE_SUMMARY=` appears after enough closed hypothetical outcomes.
+- [ ] `SETUP_STATS=` appears when `PrintSetupBreakdown is true`.
+- [ ] `REPLAY_VALIDATION_PROGRESS=` appears every configured replay validation interval.
+- [ ] `REPLAY_VALIDATION_SUMMARY=` appears on disable/termination when NinjaTrader provides the hook.
+- [ ] Replay validation output is observation-only and non-executable.
+- [ ] `STRATEGY_DIAGNOSTICS=` appears after enough closed hypothetical outcomes.
+- [ ] `SETUP_DIAGNOSTIC=` appears for setup-level recommendations.
+- [ ] Diagnostics output is observation-only, non-executable, and does not automatically change setup enable flags.
+- [ ] Negative diagnostics include `Sim101Eligible=False` or `EligibleForSim101=False`.
+- [ ] `FILTERED_CANDIDATE=` appears when candidates are suppressed by `DiagnosticV2`.
+- [ ] `FILTER_SUMMARY=` appears periodically.
+- [ ] `QUALITY_GATE_PASSED=` appears when a candidate passes all ICT filters.
+- [ ] `FILTERED_CANDIDATE=` includes ICT quality-gate reasons when using `IctAmdLiquidityV1`.
+- [ ] `FILTER_SUMMARY=` includes ICT rejection counters.
+- [ ] `ORIGINAL_STRATEGY_FILTERED=` appears for rejected original roadmap candidates.
+- [ ] `ORIGINAL_STRATEGY_CANDIDATE=` appears when a candidate passes the original value roadmap.
+- [ ] `ADAPTIVE_TARGET_PLAN=` appears when a logical target plan is built.
+- [ ] `FILTER_SUMMARY=` includes original strategy rejection counters.
+- [ ] Performance summary reflects allowed/filtered V2 candidates only when the filter layer is enabled.
+- [ ] The `Baseline` profile can be used to compare original unfiltered behavior.
+- [ ] Output does not include `ExecutionReady`, `OrderReady`, `LONG_VALID`, `LongValid`, `SignalConfirmed`, or `ConfirmedLong`.
+- [ ] No trades appear in the Orders tab, Executions tab, Sim101, or any live account.
+
+Do not mark NT-4G complete until every item has been checked manually inside NinjaTrader 8.
+
+Notes:
+
+- Journal records are observations only.
+- A journal record does not mean a trade was placed.
+- Hypothetical outcome tracking is observation-only and does not execute trades.
+- Performance stats are hypothetical, based on candidate estimates and not real fills.
+- A hypothetical outcome does not mean the strategy is profitable.
+- NT-4C helps identify setup types for further testing, but it is not proof of profitability.
+- NT-4D replay validation helps evaluate multiple sessions consistently, but it does not prove profitability.
+- NT-4E strategy diagnostics help decide whether a strategy deserves Sim101, but they do not execute trades.
+- NT-4F strategy filters test a cleaner V2 replay profile, but they are observation-only and non-executable.
+- NT-4G adds the ICT-supported market model: HTF bias, accumulation, liquidity sweep, displacement, fair value gap, OTE, target quality, and order flow remains the final confirmation.
+- NT-4G Revised makes OriginalValueRoadmapV1 the recommended main strategy profile. The original strategy is not ICT; it is a value roadmap based on higher timeframe VWAP, RTH value, composite value area, developing value, return pullback, breakout pullback, continuation, order-flow confirmation, and adaptive target planning.
+- Targets are logical/adaptive value levels, not fixed RR.
+- Negative diagnostics mean strategy rules should be refined before execution.
+- Filters do not prove profitability. Later NT-5A may add Sim101 paper execution only after IctAmdLiquidityV1 has stable positive diagnostics across enough sessions.

@@ -1,0 +1,59 @@
+{
+  "instrument": {
+    "symbol": "ES",
+    "exchange": "CME",
+    "asset_type": "futures",
+    "tick_size": 0.25,
+    "point_value": 50.0,
+    "session": "RTH",
+    "timestamp": "2026-06-24T15:00:00Z"
+  },
+  "value_context": {
+    "previous_rth_vah": 6015.0,
+    "previous_rth_val": 6000.0,
+    "previous_rth_poc": 6008.0,
+    "current_rth_vah": 6018.0,
+    "current_rth_val": 6000.0,
+    "current_rth_poc": 6009.0,
+    "current_vwap": 6007.0,
+    "vwap_upper_1": 6014.0,
+    "vwap_upper_2": 6021.0,
+    "vwap_lower_1": 5995.0,
+    "vwap_lower_2": 5988.0,
+    "composite_value_high": 6020.0,
+    "composite_value_low": 5998.0,
+    "context_bias": "bullish",
+    "market_state": "acceptance_higher"
+  },
+  "order_flow": {
+    "aggressive_buy_volume": 1250.0,
+    "aggressive_sell_volume": 1100.0,
+    "delta": 150.0,
+    "cumulative_delta": 900.0,
+    "session_volume": 210000.0,
+    "volume_spike_detected": false,
+    "seller_absorption_detected": true,
+    "buyer_absorption_detected": true,
+    "trapped_sellers_detected": false,
+    "trapped_buyers_detected": false,
+    "passive_buy_liquidity_detected": true,
+    "passive_sell_liquidity_detected": false,
+    "liquidity_wall_price": 6000.0,
+    "large_participant_level": 6000.0,
+    "tape_speed": "normal",
+    "orderflow_confidence": "high"
+  },
+  "setup_candidate": {
+    "setup_type": "PULLBACK_CONTINUATION_LONG",
+    "entry_price": 6000.25,
+    "stop_price": 5997.75,
+    "target_price": 6007.0,
+    "location_type": "CURRENT_RTH_VAL",
+    "confirmation_type": "BUYER_DEFENSE",
+    "reason": "Bullish context pulled back to value and buyers defended the retest."
+  },
+  "metadata": {
+    "source": "sample",
+    "min_reward_risk_ratio": 2.0
+  }
+}

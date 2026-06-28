@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+.env
+*.jsonl
+data/paper_positions.json
+dist/
+build/
+*.egg-info/

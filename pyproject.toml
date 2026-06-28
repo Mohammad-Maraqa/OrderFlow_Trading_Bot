@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "orderflow-ibkr-agent"
+version = "0.1.0"
+description = "Deterministic long-only order-flow decision engine"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.8,<3",
+  "pydantic-settings>=2.3,<3",
+  "python-dotenv>=1.0,<2",
+  "rich>=13.7,<15",
+  "typer>=0.12,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2,<9"]
+ibkr = ["ib-insync>=0.9.86,<1"]
+
+[project.scripts]
+orderflow-agent = "orderflow_ibkr_agent.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/orderflow_ibkr_agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --basetemp=.pytest_tmp"

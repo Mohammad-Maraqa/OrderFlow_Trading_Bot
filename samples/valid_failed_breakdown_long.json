@@ -1,0 +1,59 @@
+{
+  "instrument": {
+    "symbol": "ES",
+    "exchange": "CME",
+    "asset_type": "futures",
+    "tick_size": 0.25,
+    "point_value": 50.0,
+    "session": "RTH",
+    "timestamp": "2026-06-24T14:30:00Z"
+  },
+  "value_context": {
+    "previous_rth_vah": 6015.0,
+    "previous_rth_val": 6000.0,
+    "previous_rth_poc": 6008.0,
+    "current_rth_vah": 6012.0,
+    "current_rth_val": 6000.0,
+    "current_rth_poc": 6006.0,
+    "current_vwap": 6007.0,
+    "vwap_upper_1": 6014.0,
+    "vwap_upper_2": 6021.0,
+    "vwap_lower_1": 6000.0,
+    "vwap_lower_2": 5993.0,
+    "composite_value_high": 6020.0,
+    "composite_value_low": 5999.5,
+    "context_bias": "bearish",
+    "market_state": "rejection_lower"
+  },
+  "order_flow": {
+    "aggressive_buy_volume": 850.0,
+    "aggressive_sell_volume": 1400.0,
+    "delta": -550.0,
+    "cumulative_delta": -2200.0,
+    "session_volume": 190000.0,
+    "volume_spike_detected": true,
+    "seller_absorption_detected": true,
+    "buyer_absorption_detected": false,
+    "trapped_sellers_detected": true,
+    "trapped_buyers_detected": false,
+    "passive_buy_liquidity_detected": true,
+    "passive_sell_liquidity_detected": false,
+    "liquidity_wall_price": 5999.5,
+    "large_participant_level": 6000.0,
+    "tape_speed": "fast",
+    "orderflow_confidence": "high"
+  },
+  "setup_candidate": {
+    "setup_type": "FAILED_BREAKDOWN_LONG",
+    "entry_price": 6000.25,
+    "stop_price": 5997.75,
+    "target_price": 6006.25,
+    "location_type": "PREVIOUS_RTH_VAL",
+    "confirmation_type": "SELLER_ABSORPTION_RECLAIM",
+    "reason": "Sellers were trapped below value and price reclaimed VAL."
+  },
+  "metadata": {
+    "source": "sample",
+    "min_reward_risk_ratio": 2.0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "instrument": {
+    "symbol": "ES",
+    "exchange": "CME",
+    "asset_type": "futures",
+    "tick_size": 0.25,
+    "point_value": 50.0,
+    "session": "RTH",
+    "timestamp": "2026-06-24T15:15:00Z"
+  },
+  "value_context": {
+    "previous_rth_vah": 6015.0,
+    "previous_rth_val": 6000.0,
+    "previous_rth_poc": 6008.0,
+    "current_rth_vah": 6012.0,
+    "current_rth_val": 6000.0,
+    "current_rth_poc": 6006.0,
+    "current_vwap": 6007.0,
+    "vwap_upper_1": 6014.0,
+    "vwap_upper_2": 6021.0,
+    "vwap_lower_1": 6000.0,
+    "vwap_lower_2": 5993.0,
+    "composite_value_high": 6020.0,
+    "composite_value_low": 5999.5,
+    "context_bias": "bearish",
+    "market_state": "acceptance_lower"
+  },
+  "order_flow": {
+    "aggressive_buy_volume": 600.0,
+    "aggressive_sell_volume": 1600.0,
+    "delta": -1000.0,
+    "cumulative_delta": -4200.0,
+    "session_volume": 205000.0,
+    "volume_spike_detected": true,
+    "seller_absorption_detected": false,
+    "buyer_absorption_detected": false,
+    "trapped_sellers_detected": false,
+    "trapped_buyers_detected": false,
+    "passive_buy_liquidity_detected": false,
+    "passive_sell_liquidity_detected": true,
+    "liquidity_wall_price": 5995.0,
+    "large_participant_level": 6000.0,
+    "tape_speed": "fast",
+    "orderflow_confidence": "high"
+  },
+  "setup_candidate": {
+    "setup_type": "SHORT",
+    "entry_price": 6000.0,
+    "stop_price": 5998.0,
+    "target_price": 6004.0,
+    "location_type": "SELL_RESISTANCE",
+    "confirmation_type": "BEARISH_CONTINUATION_SHORT",
+    "reason": "This deliberately forbidden short attempt must fail validation."
+  },
+  "metadata": {
+    "source": "negative-test"
+  }
+}

@@ -1,0 +1,2 @@
+"""Pure deterministic strategy evaluators."""
+
